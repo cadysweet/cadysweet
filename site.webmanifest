@@ -1,0 +1,20 @@
+{
+  "name": "Cady Pay | حسابات كادي الرسمية",
+  "short_name": "Cady Pay",
+  "description": "الوصول السريع إلى حسابات كادي المصرفية الرسمية.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f2ed",
+  "theme_color": "#742779",
+  "icons": [
+    {
+      "src": "./cady-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
