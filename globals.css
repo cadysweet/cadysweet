@@ -1012,6 +1012,97 @@ a {
   line-height: 1.7;
 }
 
+.receipt-station {
+  margin-top: 24px;
+  padding: clamp(18px, 3vw, 26px);
+  border: 1px solid #b9dccc;
+  border-radius: 20px;
+  background: #f0faf4;
+}
+
+.receipt-station-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.receipt-step {
+  display: grid;
+  place-items: center;
+  flex: 0 0 38px;
+  height: 38px;
+  border-radius: 12px;
+  color: #176b51;
+  background: #dcefe4;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.receipt-station h3 {
+  margin: 0;
+  color: #174f3d;
+  font-size: clamp(17px, 2vw, 21px);
+  line-height: 1.6;
+}
+
+.receipt-station-heading p {
+  margin: 5px 0 0;
+  color: #4b695b;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.whatsapp-receipt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 62px;
+  margin-top: 20px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  color: #fff;
+  background: #167347;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.5;
+  transition: background-color .18s ease;
+}
+
+.whatsapp-receipt > svg {
+  flex-shrink: 0;
+}
+
+.whatsapp-receipt small {
+  font-size: 13px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.whatsapp-receipt:hover {
+  background: #105e38;
+}
+
+.whatsapp-receipt:focus-visible {
+  outline: 3px solid #176b51;
+  outline-offset: 4px;
+}
+
+.receipt-instructions {
+  margin: 12px 0 0;
+  color: #4b695b;
+  font-size: 12px;
+  line-height: 1.9;
+  text-align: center;
+}
+
+.receipt-instructions b {
+  display: inline-block;
+  color: #174f3d;
+  font-weight: 600;
+}
+
 .trust-grid {
   width: min(calc(100% - 48px), var(--max));
   margin: 18px auto 0;
