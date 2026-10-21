@@ -158,12 +158,7 @@ export default function Home() {
   const selected = accounts.find((account) => account.id === selectedId) ?? accounts[0];
   const selectedBank = banks.find((bank) => bank.id === selected.bankId) ?? banks[0];
   const bankAccounts = accounts.filter((account) => account.bankId === selectedBank.id);
-  const receiptMessage = [
-    "السلام عليكم، أود إرسال إيصال تحويل إلى حساب كادي.",
-    `المصرف: ${selectedBank.name}`,
-    `الحساب: ${selected.label}`,
-    `رقم الحساب: ${selected.account}`,
-  ].join("\n");
+  const receiptMessage = `السلام عليكم، حوّلت لحساب كادي في ${selectedBank.name}، وهذا إيصال التحويل`;
   const receiptWhatsAppUrl = `https://wa.me/${receiptWhatsAppNumber}?text=${encodeURIComponent(receiptMessage)}`;
 
   useEffect(() => {
@@ -559,7 +554,7 @@ export default function Home() {
 
           <section className="receipt-station" aria-labelledby="receipt-title">
             <div className="receipt-station-heading">
-              <span className="receipt-step" aria-hidden="true">٣</span>
+              <span className="receipt-step" aria-hidden="true">3</span>
               <span>بعد إتمام التحويل</span>
             </div>
             <h3 id="receipt-title">أرسل إيصال التحويل</h3>
